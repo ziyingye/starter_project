@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: rgba(218, 93, 63, 1);
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.heading {
+  display: inline-grid;
+  padding: 15px;
+}
+
+.heading:hover {
+  background-color: #ad302b;
+}
+
+a {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+  display: list-item;
+}
+
+#container {
+  display: grid;
+  grid-template: "a a a";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#container > div {
+  background-color: #fbd4ab;
+  width: 100%;
+  height: 105%;
+}
+
+body {
+  background-color: #f9f6ef;
+  font: 300 1em Georgia, Times, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #da5d3f;
+  font: 600 2.2em "Trebuchet MS", Arial, sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+h2 {
+  color: #856645;
+  font: 600 1.6em "Trebuchet MS", Arial, sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#images {
+  display: inline-grid;
+  grid-template: "a a a";
+  grid-template-columns: repeat(6, 1fr);
+}

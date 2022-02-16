@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+#heading{
+	width: 100%;
+	background-color: #DA5D3F;
+	list-style: none;
+	display: inline-block;
+}
+
+li{
+	display: inline;
+	width: 100%;
+	border-bottom: 1px solid #F9F6EF;
+	padding: 10px;
+}
+
+a{
+	font-family: Lato, sans-serif;
+	font-size: 24px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+li:hover{
+	background-color: rgba(82, 66, 51, 0.5);
+}
+
+body{
+	background-color: #F9F6EF;
+	font: 300 1em Georgia, Times, sans-serif;
+}
+
+h1{
+	color: #DA5D3F;
+	font: 600 2.2em "Trebuchet MS", Arial, sans-serif;
+
+}
+
+h2{
+	color: #856645;
+	font: 600 1.6em "Trebuchet MS", Arial, sans-serif;
+}
+
+h3{ 
+	color: #856645;
+	font: 400 1.4em "Trebuchet MS", Arial, sans-serif;
+}
+
+p{
+	color: #4F4232;
+	line-height: 1.5em;
+}
+
