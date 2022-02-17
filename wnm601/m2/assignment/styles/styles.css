@@ -1,72 +1,177 @@
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-.sidebar {
+body {
+  font: 300 1em "Trebuchet MS", Arial, sans-serif;
+}
+
+/*navigation*/
+.navbar {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.nav_center{
+  display: flex;
+  align-items: center;
+}
+
+.nav_header{
+  height: auto;
+  margin-right: 2rem;
+}
+
+.nav_header img{
+  width: 200px;
+  align-items: center;
+}
+
+.nav_links {
   width: 100%;
-  background-color: rgba(218, 93, 63, 1);
-  list-style: none;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.heading {
-  display: inline-grid;
-  padding: 15px;
-}
-
-.heading:hover {
-  background-color: #ad302b;
-}
-
-a {
-  font-family: Lato, sans-serif;
-  font-size: 18px;
+.nav_link{
+  margin-right: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #000000;
   text-decoration: none;
+}
+
+.nav_link:hover{
+  color: #d8753b;
+}
+
+/* Container holding the image and the text */
+.head_img_container {
+  position: relative;
+  text-align: center;
   color: #ffffff;
+  font: 600 4em Georgia, Arial, sans-serif;
 }
 
-li {
-  list-style: none;
-  display: list-item;
+.head_img_container > div{
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
-#container {
+.head_image {
+  width: 1500px;
+  height: 400px;
+}
+
+.text_centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Ingredients' titles*/
+.ingre_name {
+  color: #d8753b;
+  font: 600 1.6em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Container holding ingredients */
+#ingredients {
   display: grid;
   grid-template: "a a a";
   grid-template-columns: repeat(3, 1fr);
+  padding: 200px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  column-gap: 20px;
 }
 
-#container > div {
-  background-color: #fbd4ab;
+#ingredients > div {
+  background-color: rgb(255, 248, 210);
   width: 100%;
-  height: 105%;
+  transition: 1s;
+  height: 100%;
+  padding: 50px;
 }
 
-body {
-  background-color: #f9f6ef;
-  font: 300 1em Georgia, Times, sans-serif;
+#ingredients >div:hover {
+  background-color: rgb(255, 208, 154);
+  transform: scaleX(1.05);
+}
+
+#Instructions{
+  color: #d8753b;
+  background-color: rgb(255, 248, 210);
+  font: 600 2.5em Georgia, Arial, sans-serif;
+  text-align: center;
+  width: 1500px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+/*Unordered lists for ingredients*/
+.unordered {
+  list-style: none;
+  display: list-item;
+  line-height: 1.5rem;
   text-align: center;
 }
 
-h1 {
-  color: #da5d3f;
-  font: 600 2.2em "Trebuchet MS", Arial, sans-serif;
+/* Container holding steps and images*/
+#container_2 {
+  display: grid;
+  grid-template: "a a";
+  grid-template-columns: repeat(3, 1fr);
+  padding: 200px;
+  padding-top: 150px;
+  padding-bottom: 0px;
   text-align: center;
-  line-height: 1.5em;
 }
 
-h2 {
-  color: #856645;
-  font: 600 1.6em "Trebuchet MS", Arial, sans-serif;
-  text-align: center;
-  line-height: 1.5em;
+#container_2 > div{
+  background-color: rgb(255, 248, 210);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
 }
 
-#images {
-  display: inline-grid;
-  grid-template: "a a a";
-  grid-template-columns: repeat(6, 1fr);
+/*Ordered lists for steps and images */
+.ordered {
+  text-align: left;
+  padding: 30px;
+  list-style-type:decimal-leading-zero
+}
+
+/* Container holding the last step */
+#last_step {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 200px;
+  padding-top: 0px;
+}
+
+#last_step >div{
+  background-color: rgb(255, 248, 210);
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+h3{
+  color: #ec712a;
+  font: 600 2em Georgia, Arial, sans-serif;
+  text-align: left;
+  padding-top: 80px;
 }

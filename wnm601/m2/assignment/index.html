@@ -1,75 +1,124 @@
-<!-- TODO Write your comments here -->
-
 <!doctype html>
 <html>
 	<head>
-		<title>Ziying's Recipe</title>
+		<title>Ziying's Recipes</title>
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	</head>
 
 	<body>
 
-		<nav>
-			<ul class="sidebar">
-				<li class="heading"><a href="#">Home</a></li>
-				<li class="heading"><a href="#">Recipe</a></li>
-				<li class="heading"><a href="#">About</a></li>
-				<li class="heading"><a href="#">Contact Us</a></li>	
-			</ul>
+		<nav class="navbar" id="top">
+			<div class="nav_center">
+				<div class="nav_header">
+					<img class="nav_logo" src="img/logo.svg" alt="Ziying's">
+				</div>
+				<div class="nav_links">
+					<a href="#" class="nav_link">Home</a>
+					<a href="#" class="nav_link">About</a>
+					<a href="#" class="nav_link">Tags</a>
+					<a href="#" class="nav_link">Recipes</a>
+				</div>
+			</div>
 		</nav>
 
-		<h1>Kung Pao Chicken</h1>
+		<div class="head_img_container">
+			<img class="head_image" src="img/7_2.png">
+			<div class="text_centered">Kung Pao Chicken</div>
+		</div>
 
-		<img src="img/7_1.jpg" alt="Picture of Kung Pao Chicken">
-
-		<div id="container">
+		<div id="ingredients">
 			<div>
-				<h2>Basic Ingredients</h2>
+				<h2 class="ingre_name">Basic Ingredients</h2>
 				<ul>
-					<li>1 pound boneless chicken breast cut into chunks</li>
-					<li>1/3 Cucumber</li>
-					<li>1/4 Carrot</li>
-					<li>Peanuts</li>
-					<li>Hot chili paste</li>
-					<li>Sichuan peppercorns</li>
-					<li>Small red peppers</li>
+					<li class="unordered">1 pound boneless chicken breast</li>
+					<li class="unordered">1/3 Cucumber</li>
+					<li class="unordered">1/4 Carrot</li>
+					<li class="unordered">Peanuts</li>
+					<li class="unordered">Hot chili paste</li>
+					<li class="unordered">Sichuan peppercorns</li>
+					<li class="unordered">Small red peppers</li>
 				</ul>
 			</div>
 			<div>
-				<h2>Marinate Ingredients</h2>
+				<h2 class="ingre_name">Marinate Ingredients</h2>
 				<ul>
-					<li>1 tablespoon shaoxing wine</li>
-					<li>1 tablespoon light soy sauce</li>
-					<li>1 tablespoon sesame oil</li>
-					<li>1 tablespoon starch</li>
-					<li>Hot chili paste</li>
-					<li>Appropriate amount of salt and egg white</li>
+					<li class="unordered">1 tablespoon shaoxing wine</li>
+					<li class="unordered">1 tablespoon light soy sauce</li>
+					<li class="unordered">1 tablespoon sesame oil</li>
+					<li class="unordered">1 tablespoon starch</li>
+					<li class="unordered">Hot chili paste</li>
+					<li class="unordered">Appropriate amount of salt and egg white</li>
 				</ul>
 			</div>
 			<div>
-				<h2>Sauce Ingredients</h2>
+				<h2 class="ingre_name">Sauce Ingredients</h2>
 				<ul>
-					<li>1 tablespoon Chinese black vinegar</li>
-					<li>1 tablespoon sugar</li>
-					<li>1/2 tablespoon oyster sauce</li>
-					<li>1 tablespoon shaoxing wine</li>
-					<li>1/2 tablespoon sesame oil</li>
-					<li>1 tablespoon starch</li>
-					<li>Chopped green onion and garlic</li>
+					<li class="unordered">1 tablespoon Chinese black vinegar</li>
+					<li class="unordered">1 tablespoon sugar</li>
+					<li class="unordered">1/2 tablespoon oyster sauce</li>
+					<li class="unordered">1 tablespoon shaoxing wine</li>
+					<li class="unordered">1/2 tablespoon sesame oil</li>
+					<li class="unordered">1 tablespoon starch</li>
+					<li class="unordered">Chopped green onion and garlic</li>
 				</ul>
 			</div>
 		</div>
+		
+		
+		<h2 id="Instructions">Instructions</h2>
 
-
-		<div id="images">
-			<img src="img/1_1.jpg">
-			<img src="img/2_1.jpg">
-			<img src="img/3_1.jpg">
-			<img src="img/4_1.jpg">
-			<img src="img/5_1.jpg">
-			<img src="img/6_1.jpg">
+		<div id="container_2">
+			<div>
+				<img src="img/1_1.jpg">
+				<ol>
+					<li class="ordered">Cut 1 pound boneless/skinless chicken breast into 1 inch cubes.</li>
+				</ol>
+			</div>
+			<div>
+				<img src="img/2_1.jpg">
+				<ol start="2">
+					<li class="ordered">Mix 1 tablespoon shaoxing wine, 1 tablespoon light soy sauce, 1 tablespoon sesame oil, 1 tablespoon starch, and appropriate amount of salt and egg white together. Mix with chicken and let it marinate for about 30 minutes.</li>
+				</ol>
+			</div>
+			<div>
+				<img src="img/3_1.jpg">
+				<ol start="3">
+					<li class="ordered">Cut the cucumber, carrot, and small red peppers into chunks, put them together with hot chili paste and Sichuan peppercorns in a plate.</li>
+				</ol>
+			</div>
+			<div>
+				<img src="img/4_1.jpg">
+				<ol start="4">
+					<li class="ordered"> Mix 1 tablespoon Chinese black vinegar, 1 tablespoon sugar, 1/2 tablespoon oyster sauce, 1 tablespoon shaoxing wine, 1 tablespoon honey, 2 tablespoon chicken broth/water, 1/2 tablespoon sesame oil, 1 tablespoon starch, and chopped green onion and garlic all together in a bowl.</li>
+				</ol>
+			</div>	
+			<div>
+				<img src="img/5_1.jpg">
+				<ol start="5">
+					<li class="ordered">Deep fried peanuts with low fire, then mix with some salts after take them out.</li>
+				</ol>
+			</div>
+			<div>
+				<img src="img/6_1.jpg">
+				<ol start="6">
+					<li class="ordered">Use high fire to stir fry chicken chunks for about 15 seconds. Take them out once the color change.</li>
+				</ol>
+			</div>
 		</div>
-
+		
+		<div id="last_step">
+			<div><img src="img/7_1.jpg"></div>
+			<div>
+				<ol start="7">
+					<li class="ordered">Keep the oil in the pot, put Sichuan peppercorns and small red peppers into the pot, stir fry with low fire until the smell comes out.</li>
+					<li class="ordered">Change to high fire, add hot chili paste, cucumber and carrot,  stir fry until they become soft.</li>
+					<li class="ordered">Add chicken chunks, stir for about 2 minutes, then pull the sauce into the pot, stir again until they mix together.</li>
+					<li class="ordered">Finally, add peanuts and stir.</li>
+				</ol>
+				<h3>Enjoy your meal!</h3>
+			</div>
+			<a href="#top">Back To Top</a>
+		</div>
 
 	</body>
 </html>
