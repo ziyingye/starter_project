@@ -51,15 +51,15 @@ body {
   color: #d8753b;
 }
 
-/* Container holding the image and the text */
-.head_img_container {
+/* Container holding the head*/
+.head_container {
   position: relative;
   text-align: center;
   color: #ffffff;
   font: 600 4em Georgia, Arial, sans-serif;
 }
 
-.head_img_container > div{
+.head_container > div{
   background-color:rgba(0, 0, 0, 0.5);
 }
 
@@ -68,23 +68,22 @@ body {
   height: 400px;
 }
 
-.text_centered {
+.head_text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/*Ingredients' titles*/
-.ingre_name {
+/* Container holding ingredients */
+.ingredients_title {
   color: #d8753b;
   font: 600 1.6em;
   text-align: center;
   padding-bottom: 20px;
 }
 
-/* Container holding ingredients */
-#ingredients {
+.ingredients_container {
   display: grid;
   grid-template: "a a a";
   grid-template-columns: repeat(3, 1fr);
@@ -94,7 +93,7 @@ body {
   column-gap: 20px;
 }
 
-#ingredients > div {
+.ingredients_container > div {
   background-color: rgb(255, 248, 210);
   width: 100%;
   transition: 1s;
@@ -102,12 +101,21 @@ body {
   padding: 50px;
 }
 
-#ingredients >div:hover {
+.ingredients_container >div:hover {
   background-color: rgb(255, 208, 154);
   transform: scaleX(1.05);
 }
 
-#Instructions{
+/*Unordered lists for ingredients*/
+.unordered {
+  list-style: none;
+  display: list-item;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+/*Title for Instructions*/
+.Instructions{
   color: #d8753b;
   background-color: rgb(255, 248, 210);
   font: 600 2.5em Georgia, Arial, sans-serif;
@@ -121,16 +129,8 @@ body {
   padding-top: 40px;
 }
 
-/*Unordered lists for ingredients*/
-.unordered {
-  list-style: none;
-  display: list-item;
-  line-height: 1.5rem;
-  text-align: center;
-}
-
-/* Container holding steps and images*/
-#container_2 {
+/* Container holding Instructions*/
+.container_2 {
   display: grid;
   grid-template: "a a";
   grid-template-columns: repeat(3, 1fr);
@@ -140,7 +140,7 @@ body {
   text-align: center;
 }
 
-#container_2 > div{
+.container_2 > div{
   background-color: rgb(255, 248, 210);
   width: 100%;
   height: 100%;
@@ -155,14 +155,14 @@ body {
 }
 
 /* Container holding the last step */
-#last_step {
+.last_step {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 200px;
   padding-top: 0px;
 }
 
-#last_step >div{
+.last_step >div{
   background-color: rgb(255, 248, 210);
   width: 100%;
   height: 100%;
