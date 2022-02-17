@@ -115,18 +115,20 @@ body {
 }
 
 /*Title for Instructions*/
-.Instructions{
+.Instructions_title {
   color: #d8753b;
-  background-color: rgb(255, 248, 210);
   font: 600 2.5em Georgia, Arial, sans-serif;
   text-align: center;
-  width: 1500px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 80px;
+  
+}
+
+.Instructions {
+  align-items: center;
+  background-color: rgb(255, 248, 210);
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Container holding Instructions*/
@@ -135,7 +137,7 @@ body {
   grid-template: "a a";
   grid-template-columns: repeat(3, 1fr);
   padding: 200px;
-  padding-top: 150px;
+  padding-top: 0px;
   padding-bottom: 0px;
   text-align: center;
 }
