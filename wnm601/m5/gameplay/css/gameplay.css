@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Papyrus";
+    src: url("../fonts/parchment-mf-font/ParchmentMf-Vqge.ttf");
+}
+
+body, html{
+    /*Get rid of the default browser CSS*/
+    margin: 0;
+    height: 100%;
+    color: #e1e29e;
+    text-align: center;
+}
+
+body{
+    /*background*/
+    background: black url('../images/gameplay_background.png') repeat top center;
+    background-size: cover;
+}
+
+main{    
+    /*Container of whole game page*/
+    margin: 80px;
+    margin-top: 40px;
+    
+    border: solid #e1e29e 1px;
+    border-radius: 30px;
+    background-color: rgb(0, 63, 57, 40%);
+}
+
+nav{
+    /*Head container: logo and back button*/
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    margin-top: 180px;
+    font-weight: 100;
+    font-size: 200px;
+    font-family: "Papyrus", sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #e1e29e;
+}
+
+#logo{
+    width: 200px;
+}
+
+#back{
+    background: transparent url('../images/button_back.png') no-repeat center center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-left: 85%;
+}
+
+#playground{
+    /*Characters chosen by player & computer*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#player{
+    margin-right: 100px;
+}
+
+#computer{
+    margin-left:100px;
+}
+
+#image_player{
+    height: 500px;
+}
+
+#image_computer{
+    height: 550px;
+}
+
+#choices_player{
+    margin-top: 50px;
+}
+
+.choices{
+    /*Container of choices*/
+    margin-bottom: 50px;
+}
+
+.choice_player{
+    background: transparent no-repeat center center;
+    background-size: cover;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+}
+
+.choice_computer{
+    background: transparent no-repeat center center;
+    background-size: cover;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+}
+
+#spaceman_player{
+    background-image: url('../images/spaceman_small_dark.png');
+}
+
+#spaceman_player:hover{
+    background-image: url('../images/spaceman_small.png');
+    box-shadow: 0 0 10px #e1e29e;
+}
+
+#spaceman_computer{
+    background-image: url('../images/spaceman_small_dark.png');
+}
+
+#vairemont_player{
+    background-image: url('../images/vairemont_small_dark.png');
+}
+
+#vairemont_player:hover{
+    background-image: url('../images/vairemont_small.png');
+    box-shadow: 0 0 10px #e1e29e;
+}
+
+#vairemont_computer{
+    background-image: url('../images/vairemont_small_dark.png');
+}
+
+#ghobli_player{
+    background-image: url('../images/ghobli_small_dark.png');
+}
+
+#ghobli_player:hover{
+    background-image: url('../images/ghobli_small.png');
+    box-shadow: 0 0 10px #e1e29e;
+}
+
+#ghobli_computer{
+    background-image: url('../images/ghobli_small_dark.png');
+}

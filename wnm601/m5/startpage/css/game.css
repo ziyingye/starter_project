@@ -1,0 +1,54 @@
+body, html{
+    /*Get rid of the default browser CSS*/
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    /*background*/
+    background-image: url('../images/first_page.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+}
+
+#button_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    
+    margin-top: 650px;
+}
+
+button{
+    /*button fonts*/
+    color: #f4de93;
+    font-family: 'Saira Stencil One', san-serif;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+    /*button background*/
+    border-color: #f4de93;
+    border-style: double;
+    border-radius: 35px;
+    background-color: #0f3b3d; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#button_start{
+    display: inline-block;
+    width: 240px;
+    height: 70px;
+}
+
+#button_start:hover{
+    box-shadow: 0 0 10px #e1e29e;
+}
+

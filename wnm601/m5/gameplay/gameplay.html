@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor</title>
+    <link rel="stylesheet" type="text/css" href="css/gameplay.css"
+    
+</head>
+<body>
+    <main>
+        <nav id="button_back">
+            <img id="logo" src="images/logo.png">
+            <button id="back" onclick="#"></button>
+        </nav>
+        <section id="playground">
+            <div id="player">
+                <img id="image_player" src="images/vairemont_win.png">
+                <div id="choices_player" class="choices">
+                    <button class="choice_player" id="spaceman_player" value="0"></button>
+                    <button class="choice_player" id="vairemont_player" value="1"></button>
+                    <button class="choice_player" id="ghobli_player" value="2"></button>
+                </div>
+            </div>
+            <div>
+                <h1>VS</h1>
+                <h2 class="game_result"></h2>
+            </div>           
+            <div id="computer">
+                <img  id="image_computer" src="images/spaceman_lose.png">
+                <div id="choices_computer" class="choices">
+                    <button class="choice_computer" id="spaceman_computer"></button>
+                    <button class="choice_computer" id="vairemont_computer"></button>
+                    <button class="choice_computer" id="ghobli_computer"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script type="text/javascript" src="js/gameplay.js"></script>
+</body>
+</html>
